@@ -17,7 +17,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  binding.pry
+  # binding.pry
   # currently only works for only numbers, punctuation breaks it.
   # consider: delete all punctuation before scanning, or working possibilities into regex.
   phone.delete("()-").scan(/(\d{3})+(\d{3})+(\d{4})/)
